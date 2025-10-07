@@ -16,8 +16,17 @@
       <div class="header__inner">
         <div class="logo">
           <img src="images/logo.png" alt="Логотип">
-          <span>RestoWebSite</span>
+          <span>Resto<i>Web</i>Site</span>
         </div>
+
+
+
+        <button class="burger-menu" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <div class="header__nav">
           <nav>
             <ul class="menu">
@@ -29,35 +38,84 @@
             </ul>
           </nav>
         </div>
-        <div class="header__menu_dots">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+
         <button type="button" class="blue_btn btn" style="--022fc1d6:28px;">
           <span class="blue_btn__title ">Заказать сайт</span>
           <!---->
         </button>
+        <div class="header__social">
+          <div class="header__icons">
+            <!-- <a href="#"><img src="images/icons/vk.svg" alt="VK"></a>
+            <a href="#"><img src="images/icons/instagram.svg" alt="Instagram"></a> -->
+            <a href="#"><img src="images/icons/Whatsapp.svg" alt="WhatsApp"></a>
+            <a href="#"><img src="images/icons/telegram.svg" alt="Telegram"></a>
+            <a href="#"><img class="header__icons-tel" src="images/icons/tel.svg" alt="tel"></a>
+          </div>
+        </div>
         <a class="header__tel" href="tel:+79968552494">8 996-855-24-94</a>
 
       </div>
     </div>
   </header>
+
+
+
   <main>
     <section class="banner">
-      <div id="particles-js"></div> <!-- stats - count particles -->
+      <div id="particles-js" class="banner__part"></div>
       <div class="banner__inner">
         <div class="container">
           <h1 class="banner__title">Разработка сайтов </h1>
           <p class="banner__text"> для ресторанов, кафе и отелей с гарантией</p>
-          <button type="button" class="btn banner__btn" style="--022fc1d6:28px;">
+          <button type="button" class="btn banner__btn trigger-popup" data-popup-id="examplePopup">
             <span class="blue_btn__title">Обговорить проект</span>
             <!---->
           </button>
         </div>
       </div>
-      <div class="count-particles"> <span class="js-count-particles"></span> </div>
+      <!-- <div class="count-particles"> <span class="js-count-particles"></span> </div> -->
     </section>
+    <div class="container">
+      <!-- Trigger Button -->
+      <button class="trigger-popup" data-popup-id="examplePopup">Open Popup</button>
+
+      <!-- Append Popups Here -->
+      <div class="site-popups"></div>
+
+      <!-- Hidden Popup Template (Can be cloned or reused) -->
+      <div id="examplePopup" class="popup-modal" style="display: none;">
+        <div class="popup-overlay">
+          <div class="popup-box">
+            <button class="close-popup">&times;</button>
+            <h2 class="popup-title">Создадим партнерство?</h2>
+            <form action="">
+              <div>
+                <label class="popup-modal__leb" for="fullName">Ваше Имя</label>
+                <input class="popup-modal__input" type="text" id="fullName" name="fullName" placeholder="Джонни Депп"
+                  required>
+                <label class="popup-modal__leb" for="phone">Номер телефона</label>
+                <input class="popup-modal__input" type="tel" id="phone" name="phone" placeholder="+7 (996) 855-2494"
+                  required>
+              </div>
+              <label class="popup-modal__leb" for="textarea">Дополнительный текст</label>
+              <textarea class="popup-modal__area" name="textarea" id="textarea"></textarea>
+
+              <label>
+                <input class="popup-modal__chek" type="radio" name="faux_checkbox" value="0" checked>
+                <span>Я даю согласие на обработку моих персональных данных в соответствии с политикой
+                  конфиденциальности</span>
+              </label>
+
+              <button type="submit" class="popup-modal__btn btn">Отправить</button>
+              <p class="privacy-note">🔒 Ваша информация в безопасности и никогда не будет передана третьим лицам.
+                <a href="#">политики конфиденциальности</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
     <div class="container">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda pariatur libero in, ipsum, aut earum veniam
       optio voluptatibus deserunt dolore cupiditate doloribus. A necessitatibus enim modi perferendis soluta, neque rem.
@@ -273,8 +331,8 @@
     </div>
   </main>
   <footer>footer</footer>
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script> -->
   <script src="js/main.min.js"></script>
 </body>
 
