@@ -1,0 +1,234 @@
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #030810;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+// modal
+/* Overlay with smooth blur + dark tone */
+.popup-modal__input,
+.popup-modal__area {
+  text-transform: uppercase;
+  padding: 14px 30px;
+  font-size: 1rem;
+  border-radius: 18px;
+  // background: linear-gradient(135deg, var(--actn-color), #0aa);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid var(--actn-color);
+  box-shadow: 0 0 10px var(--actn-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.popup-modal__area {
+  height: 100px;
+}
+
+
+
+.popup-modal__leb {
+  font-size: 18px;
+  margin-left: 12px;
+
+}
+
+.popup-modal__btn {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+
+.popup-modal__chek {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+
+
+}
+
+/* Кастомный чекбокс в стиле сайта */
+.popup-modal__chek+span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.popup-modal__chek+span::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 2px solid var(--actn-color);
+  border-radius: 4px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.popup-modal__chek:checked+span::before {
+  background-color: var(--actn-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23030810' d='M10.3.9L4.1 7.1 1.7 4.7.9 5.5 4.1 8.7 11.1 1.7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popup-modal__chek:focus+span::before {
+  box-shadow: 0 0 5px var(--actn-color);
+}
+
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Neon-glass popup box */
+.popup-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  max-width: 700px;
+  width: 90%;
+  padding: 40px 30px;
+  position: relative;
+  animation: fadeInUp 0.4s ease;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  color: #fff;
+  // text-align: center;
+}
+
+/* Close button styled with glow */
+.close-popup {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: var(--actn-color);
+  cursor: pointer;
+  text-shadow: 0 0 5px var(--actn-color), 0 0 10px var(--actn-color);
+}
+
+/* Popup title with neon glow */
+.popup-title {
+  font-size: 2rem;
+  color: var(--actn-color);
+  text-shadow: 0 0 10px var(--actn-color), 0 0 20px var(--actn-color);
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+
+}
+
+/* Popup content with slight opacity */
+.popup-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Button to trigger popup */
+.trigger-popup {
+  text-transform: uppercase;
+  padding: 14px 30px;
+  font-size: 1rem;
+  border-radius: 18px;
+  // background: linear-gradient(135deg, var(--actn-color), #0aa);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid var(--actn-color);
+  box-shadow: 0 0 10px var(--actn-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trigger-popup:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--actn-color);
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Z-index wrapper */
+.site-popups {
+  position: relative;
+  z-index: 999;
+}

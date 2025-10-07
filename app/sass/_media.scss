@@ -1,0 +1,61 @@
+// Медиа-запросы для адаптивности
+
+// Для очень маленьких экранов (до 575px)
+@media (max-width: 575px) {
+  .banner {
+    &__title {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    &__btn {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+  }
+}
+
+// Для планшетов в портретной ориентации (576px - 767px)
+@media (min-width: 576px) and (max-width: 767px) {
+  .banner {
+    &__title {
+      font-size: 2.5rem;
+    }
+
+    &__text {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+// Для планшетов в альбомной ориентации (768px - 991px)
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Для ноутбуков (992px - 1199px)
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner {
+    &__title {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+// Для больших экранов (1200px и выше)
+@media (min-width: 1200px) {
+  // Стили по умолчанию уже заданы в _banner.scss
+}
