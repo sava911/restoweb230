@@ -1,5 +1,6 @@
 $(function () {
-  $('.trigger-popup').each(function (i) {
+
+  $('.popup').each(function (i) {
     let trigger = $(this).attr('data-popup-id');
     let modal = $('#' + trigger);
 
@@ -28,6 +29,15 @@ $(function () {
       }
     });
   });
+  // Бургер-меню
+  $('.burger-menu').click(function () {
+    $(this).toggleClass('active');
+    $('.header__nav').toggleClass('active');
+  });
 
-
+  // Закрытие меню при клике на ссылку
+  $('.menu a').click(function () {
+    $('.burger-menu').removeClass('active');
+    $('.header__nav').removeClass('active');
+  });
 })
