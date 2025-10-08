@@ -305,6 +305,11 @@
 
  .footer-column:nth-child(3) {
    animation-delay: 0.3s;
+
+   iframe {
+     //  border: 2px solid var(--actn-color);
+     border-radius: 18px;
+   }
  }
 
  .footer-column:nth-child(4) {
