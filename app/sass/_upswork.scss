@@ -1,0 +1,85 @@
+.uswork {
+  margin-bottom: 120px;
+
+  &__inner {}
+
+  &__title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--font-unbounded);
+    margin-bottom: 40px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+
+  &__item {
+    padding: 40px;
+    background: #fbfbfb;
+    color: #000;
+    border-radius: 18px;
+    min-height: 400px;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+  }
+
+  &__item:last-child {
+    background-color: var(--secondary);
+
+    span {
+      color: #000;
+    }
+  }
+
+  &__item-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-family: var(--font-unbounded);
+    font-weight: 500;
+    color: var(--secondary);
+    margin-bottom: 40px;
+  }
+
+  &__item-line {
+    height: 2px;
+    background: var(--secondary);
+    width: 100%;
+  }
+
+  &__item-title {
+    font-size: 26px;
+    font-family: var(--font-unbounded);
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &__item-text {
+    max-width: 230px;
+    font-size: 18px;
+  }
+
+  &__item-icon {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  &__item-btn {
+    background: #fff;
+    border: none;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}

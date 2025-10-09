@@ -77,9 +77,44 @@
     </div>
   </header>
 
+  <!-- Append Popups Here -->
+  <div class="site-popups"></div>
 
+  <!-- Hidden Popup Template (Can be cloned or reused) -->
+  <div id="examplePopup" class="popup-modal" style="display: none;">
+    <div class="popup-overlay">
+      <div class="popup-box">
+        <button class="close-popup">&times;</button>
+        <h2 class="popup-title">Создадим партнерство?</h2>
+        <form action="">
+          <div>
+            <label class="popup-modal__leb" for="fullName">Ваше Имя</label>
+            <input class="popup-modal__input" type="text" id="fullName" name="fullName" placeholder="Джонни Депп"
+              required>
+            <label class="popup-modal__leb" for="phone">Номер телефона</label>
+            <input class="popup-modal__input" type="tel" id="phone" name="phone" placeholder="+7 (996) 855-2494"
+              required>
+          </div>
+          <label class="popup-modal__leb" for="textarea">Дополнительный текст</label>
+          <textarea class="popup-modal__area" name="textarea" id="textarea"></textarea>
+
+          <label>
+            <input class="popup-modal__chek" type="radio" name="faux_checkbox" value="0" checked>
+            <span>Я даю согласие на обработку моих персональных данных в соответствии с политикой
+              конфиденциальности</span>
+          </label>
+
+          <button type="submit" class="popup-modal__btn btn">Отправить</button>
+          <p class="privacy-note">🔒 Ваша информация в безопасности и никогда не будет передана третьим лицам.
+            <a href="#">политики конфиденциальности</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <main>
+    <!-- banner -->
     <section class="banner">
       <div id="particles-js" class="banner__part"></div>
       <div class="banner__inner">
@@ -94,102 +129,344 @@
       </div>
       <!-- <div class="count-particles"> <span class="js-count-particles"></span> </div> -->
     </section>
-    <div class="container">
+    <!--services  -->
+    <section class="services">
+      <div class="container">
+        <div class="services__inner">
+
+          <h2 class="services__title">Услуги</h2>
+          <div class="services-section-wrapper">
+            <div class="services-box">
+              <img src="images/icons/dev.svg" alt="">
+
+              <h3>Разработка сайта на коде</h3>
+              <p>Мы создаем современные и адаптивные веб-сайты, отвечающие потребностям вашего бизнеса.</p>
+            </div>
+            <!-- <div class="services-box">
+
+              <img src="images/icons/mobile.svg" alt="">
 
 
-      <!-- Append Popups Here -->
-      <div class="site-popups"></div>
+              <h3>Гарантия 1 год</h3>
+              <p>Починим сайт, если вдруг что-то будет работать не так</p>
+            </div> -->
+            <div class="services-box">
 
-      <!-- Hidden Popup Template (Can be cloned or reused) -->
-      <div id="examplePopup" class="popup-modal" style="display: none;">
-        <div class="popup-overlay">
-          <div class="popup-box">
-            <button class="close-popup">&times;</button>
-            <h2 class="popup-title">Создадим партнерство?</h2>
-            <form action="">
-              <div>
-                <label class="popup-modal__leb" for="fullName">Ваше Имя</label>
-                <input class="popup-modal__input" type="text" id="fullName" name="fullName" placeholder="Джонни Депп"
-                  required>
-                <label class="popup-modal__leb" for="phone">Номер телефона</label>
-                <input class="popup-modal__input" type="tel" id="phone" name="phone" placeholder="+7 (996) 855-2494"
-                  required>
-              </div>
-              <label class="popup-modal__leb" for="textarea">Дополнительный текст</label>
-              <textarea class="popup-modal__area" name="textarea" id="textarea"></textarea>
+              <img src="images/icons/Design.svg" alt="">
 
-              <label>
-                <input class="popup-modal__chek" type="radio" name="faux_checkbox" value="0" checked>
-                <span>Я даю согласие на обработку моих персональных данных в соответствии с политикой
-                  конфиденциальности</span>
-              </label>
 
-              <button type="submit" class="popup-modal__btn btn">Отправить</button>
-              <p class="privacy-note">🔒 Ваша информация в безопасности и никогда не будет передана третьим лицам.
-                <a href="#">политики конфиденциальности</a>
-              </p>
-            </form>
+              <h3>Дизайн по фирменному стилю заведения</h3>
+              <p>Разработка интуитивно понятных и привлекательных дизайнов для улучшения пользовательского опыта.</p>
+            </div>
+            <!-- <div class="services-box">
+
+              <img src="images/icons/seo.svg" alt="">
+
+
+              <h3>SEO оптимизация</h3>
+              <p>Улучшение видимости вашего сайта в поисковых системах для привлечения трафика.</p>
+            </div> -->
+            <!-- <div class="services-box">
+
+              <img src="images/icons/security.svg" alt="">
+
+
+              <h3>Безопасность</h3>
+              <p>Обеспечение безопасности вашей цифровой инфраструктуры.</p>
+            </div> -->
+            <div class="services-box">
+
+              <img src="images/icons/development.svg" alt="">
+
+
+              <h3>Сопроводим сайт после запуска</h3>
+              <p>Возьмём на себя техподдержку сайта, чтобы всё работало так как надо, а вы занимались только развитием
+                заведения.</p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
+
+    <!-- developing -->
+    <section class="developing">
+      <div class="container">
+        <div class="developing__inner">
+          <div class="developing__info">
+            <h2 class="developing__title"><span>Разрабатываем</span>, создаём, обслуживаем и улучшаем сайты
+            </h2>
+            <p class="developing__text">Превращаем идею в инструмент для бизнеса. Удобные, быстрые и надёжные продукты,
+              которые помогают расти</p>
+            <div class="developing__btn-wr">
+              <a href="#" class="developing__btn btn">Подробнее</a>
+              <a href="#" class="developing__btn btn">Посмотрите наше портфолио</a>
+            </div>
+          </div>
+          <!-- developing__items -->
+          <div class="developing__items" style="background-image: url('images/planet.jpg');">
+            <div class="developing__item">
+              <div class="developing__item-num">1/4</div>
+              <h3 class="developing__item-title">Разработка сайта</h3>
+              <p class="developing__item-text">Создаем сайты, которые повышают конверсию и увеличивают прибыль Создаем
+                сайты, которые повышают конверсию и увеличивают прибыль Создаем сайты, которые повышают конверсию и
+                увеличивают прибыль</p>
+            </div>
+            <div class="developing__item">
+              <div class="developing__item-num">2/4</div>
+
+              <h3 class="developing__item-title">Разработка сайта</h3>
+              <p class="developing__item-text">Создаем Разрабатываем, создаём, обслуживаем и улучшаем сайты сайты,
+                которые повышают конверсию и увеличивают прибыль</p>
+            </div>
+            <div class="developing__item">
+              <div class="developing__item-num">3/4</div>
+
+              <h3 class="developing__item-title">Разработка сайта</h3>
+              <p class="developing__item-text">Создаем сайты, которые повышают конверсию и увеличивают прибыль</p>
+            </div>
+            <div class="developing__item">
+              <div class="developing__item-num">4/4</div>
+
+              <h3 class="developing__item-title">Разработка сайта</h3>
+              <p class="developing__item-text">Создаем сайты, которые повышают конверсию и увеличивают прибыль</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- text lop -->
+    <div class="text-lop">
+
+      <div class="marquee">
+        <ul class="marquee__list">
+          <li><span class="marquee__text">Адаптивность ➞ Индивидуальный дизайн ➞ Автоматизация ➞ Быстрая загрузка ➞
+              Конверсии ➞ Персонализация ➞ Многоязычность ➞
+              Безопасность ➞ Кроссбраузерность ➞</span></li>
+          <li><span class="marquee__text">Адаптивность ➞ Индивидуальный дизайн ➞ Автоматизация ➞ Быстрая загрузка ➞
+              Конверсии ➞ Персонализация ➞ Многоязычность ➞
+              Безопасность ➞ Кроссбраузерность ➞</span></li>
+          <li><span class="marquee__text">Адаптивность ➞ Индивидуальный дизайн ➞ Автоматизация ➞ Быстрая загрузка ➞
+              Конверсии ➞ Персонализация ➞ Многоязычность ➞
+              Безопасность ➞ Кроссбраузерность </span></li>
+          <li><span class="marquee__text">PR-продвижение ➞ smm ➞ маркетинг ➞ Быстрая загрузка ➞
+              интернет-реклама ➞ продуктовые задачи ➞ Многоязычность ➞
+              Безопасность ➞ Кроссбраузерность ➞</span></li>
+
+        </ul>
+        <ul aria-hidden="true">
+          <li>
+            <span class="marquee__text">Get in touch</span>
+          </li>
+        </ul>
+
+
+      </div>
     </div>
-    <div class="container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum tenetur ut nulla praesentium cupiditate eos
-      eligendi, nobis, molestiae quod, dicta cum itaque. Debitis, esse voluptatibus doloribus laboriosam facere tenetur?
-      Sit laudantium eveniet earum magnam quaerat laborum? Debitis, sequi. Ullam consequuntur totam assumenda, quasi
-      incidunt accusantium voluptas vel sint modi, dolores tempore quidem, quisquam officia? Illo ex nihil debitis
-      veritatis.
-      Sint officiis unde vero, quae incidunt ea? Quos at ad aliquid illo. Neque eaque architecto ratione numquam aperiam
-      ea dicta, eius quis temporibus eum pariatur delectus ullam saepe. Labore, consequatur.
-      Placeat atque veritatis dolorum dolores ad excepturi beatae ipsum doloremque dolore vel consequatur cumque
-      numquam, voluptatum earum, exercitationem aperiam deleniti, iste illo voluptates voluptatem ex id. Laboriosam
-      ratione aspernatur sed.
-      Sint dolore dolorum aspernatur voluptate. Sequi fugiat nihil eligendi repudiandae ipsam vero perspiciatis
-      similique rerum mollitia quaerat? Est, eveniet pariatur obcaecati iste delectus minima maxime adipisci. Odit quod
-      est quibusdam.
-      Eos totam illum quibusdam reiciendis cum similique expedita ipsam. Suscipit minima ullam a, doloribus hic quisquam
-      consequuntur itaque libero cum modi voluptas possimus esse. Officia doloremque quaerat molestias repudiandae
-      excepturi.
-      Voluptatibus et doloremque maiores perferendis corrupti, quis autem, quidem impedit consequatur totam vel id!
-      Aspernatur, eos nulla. Totam nemo rem dolore maxime? Voluptatem distinctio iure corrupti saepe ipsa facilis eum?
-      Accusantium itaque eum mollitia, aliquam excepturi porro. In, itaque molestiae. Id explicabo doloremque magnam,
-      omnis fugit architecto, deserunt velit pariatur at consequuntur ad necessitatibus, fugiat magni labore odit quis
-      maiores.
-      Eum in sed ea dolores architecto cumque reprehenderit corrupti adipisci, omnis ratione vel dolor provident magnam
-      iure officiis nulla earum, quaerat pariatur consequuntur, recusandae repellat quas! Soluta iure molestias numquam?
-      Eaque eos, architecto ab voluptate repudiandae neque incidunt facere rerum magnam suscipit doloribus accusantium
-      eum eius deleniti consectetur similique quas non vero iure animi cumque placeat a? Culpa, saepe ratione.
-      Tempora exercitationem eos obcaecati itaque libero cupiditate non, repellat illum ipsa nobis deleniti accusantium
-      distinctio, sed sunt omnis est suscipit debitis optio sit quos molestiae laudantium assumenda? Quibusdam, eaque
-      incidunt?
-      Aut animi saepe sunt deleniti perferendis minima voluptate tenetur soluta libero? Impedit, nesciunt dolorem,
-      adipisci temporibus molestiae libero neque fugit quos error nostrum natus dolor perferendis magni, odit labore
-      veritatis?
-      Accusantium temporibus itaque in eligendi repellendus ratione, eius tempore consequuntur ipsum? Alias, quia quidem
-      porro optio blanditiis, iure, assumenda nostrum sapiente laborum maxime hic repudiandae accusantium soluta aperiam
-      tempore ullam.
-      Reprehenderit, saepe ex quis ad consequatur dolore vitae nulla nesciunt reiciendis. Consequuntur eum praesentium
-      in odio, doloribus, atque ipsa tenetur recusandae quis tempore porro facere quidem harum facilis sapiente rerum.
-      Maiores fugit nulla sint sapiente facere ullam, voluptas eos reprehenderit quibusdam laudantium nihil id
-      consequuntur tempora quo quis error mollitia? Fuga at quas corporis consequuntur iure mollitia enim reiciendis
-      facere.
-      Autem illo dignissimos voluptate vitae aspernatur laudantium, quaerat amet molestias, nemo culpa veritatis iusto
-      accusamus impedit qui minima nulla quasi temporibus non maiores et. Nam totam eum quidem ipsum provident?
-      Excepturi, debitis officia. Corporis reiciendis sunt accusantium vel neque temporibus totam iure ut, deserunt
-      dolor amet perspiciatis ab alias molestias ullam, recusandae dolorum perferendis repudiandae. Esse, doloribus
-      blanditiis? Voluptas, quod.
-      Suscipit consequatur autem laborum facilis excepturi repellendus, vel tempora a animi in incidunt totam
-      consectetur vero sit odit blanditiis similique id ex maxime debitis ipsum iusto culpa. Dolorum, corrupti esse?
-      Alias illum natus molestias rem, animi deserunt delectus eum aut? Facilis nesciunt voluptas veniam eum
-      praesentium! Fugit porro, consequatur voluptatum fuga ipsam labore, culpa, minima unde obcaecati optio facilis
-      maiores!
-      Accusamus, aliquam. Unde velit deleniti odit temporibus? Voluptatem enim ullam tempore odit quod optio modi
-      perspiciatis repellendus magnam. Minima, magnam fugit corrupti magni odio ullam recusandae quidem assumenda
-      facere! Velit!
+    <!-- us work -->
+    <div class="uswork">
+      <div class="container">
+        <div class="uswork__inner">
+          <h2 class="uswork__title">Как мы работаем?</h2>
+          <!-- uswork__items -->
+          <div class="uswork__items">
+            <div class="uswork__item">
+              <div class="uswork__item-num">
+                <span>1/5</span>
+                <span class="uswork__item-line"></span>
+              </div>
+              <h3 class="uswork__item-title">Разработка сайта</h3>
+              <p class="uswork__item-text">Создаем сайты, которые повышают конверсию и увеличивают прибыль</p>
+              <div class="uswork__item-icon">
+                <img src="images/icons/development.svg" alt="">
+              </div>
+            </div>
+            <div class="uswork__item">
+              <div class="uswork__item-num">
+                <span>2/5</span>
+                <span class="uswork__item-line"></span>
+              </div>
+              <h3 class="uswork__item-title">Брифинг</h3>
+              <p class="uswork__item-text">
+                Собираем информацию и определяем цель проекта</p>
+              <div class="uswork__item-icon">
+                <img src="images/icons/dev.svg" alt="">
+              </div>
+            </div>
+            <div class="uswork__item">
+              <div class="uswork__item-num">
+                <span>3/5</span>
+                <span class="uswork__item-line"></span>
+              </div>
+              <h3 class="uswork__item-title">Разработка сайта</h3>
+              <p class="uswork__item-text">Создаем сайты, которые повышают конверсию и увеличивают прибыль</p>
+              <div class="uswork__item-icon">
+                <img src="images/icons/mobile.svg" alt="">
+              </div>
+            </div>
+            <div class="uswork__item">
+              <div class="uswork__item-num">
+                <span>4/5</span>
+                <span class="uswork__item-line"></span>
+              </div>
+              <h3 class="uswork__item-title">Разработка сайта</h3>
+              <p class="uswork__item-text">Создаем сайты, которые повышают конверсию и увеличивают прибыль</p>
+              <div class="uswork__item-icon">
+                <img src="images/icons/seo.svg" alt="">
+              </div>
+            </div>
+            <div class="uswork__item">
+              <div class="uswork__item-num">
+                <span>5/5</span>
+                <span class="uswork__item-line"></span>
+              </div>
+              <h3 class="uswork__item-title">Разработка сайта</h3>
+              <p class="uswork__item-text">Создаем сайты, которые повышают конверсию и увеличивают прибыль</p>
+              <div class="uswork__item-icon">
+                <img src="images/icons/security.svg" alt="">
+              </div>
+            </div>
+
+            <div class="uswork__item">
+              <div class="uswork__item-num">
+                <span>Время становится лучшими</span>
+              </div>
+              <h3 class="uswork__item-title">Готовы начинать?</h3>
+              <p class="uswork__item-text">Расскажите нам о своем проекте, мы предложим не только лучшие, но и удобные
+                для Вас варианты</p>
+              <button class="uswork__item-btn btn ">Связаться с нами</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- developing -->
+    <section class="developing">
+      <div class="container">
+        <div class="developing__inner">
+          <div class="developing__info">
+            <h2 class="developing__title"><span>Сопроводим</span> сайт после запуска или напишем инструкцию
+            </h2>
+            <p class="developing__text">Возьмём на себя техподдержку сайта, чтобы всё работало так как надо, а вы
+              занимались только развитием заведения.</p>
+            <div class="developing__btn-wr">
+              <button href="#" class="developing__btn btn">Подробнее</button>
+            </div>
+          </div>
+          <!-- developing__items -->
+          <div class="developing__items" style="background-image: url('images/pl2.jpg');">
+            <div class="developing__item">
+              <div class="developing__item-num">1/4</div>
+              <h3 class="developing__item-title">Создаём новые разделы на сайте</h3>
+              <p class="developing__item-text">Сверстаем его на WordPress — это простой и надёжный движок, который легко
+                поддерживать и добавлять в него новый
+                функционал</p>
+            </div>
+            <div class="developing__item">
+              <div class="developing__item-num">2/4</div>
+
+              <h3 class="developing__item-title">Меняем существующие страницы</h3>
+              <p class="developing__item-text">Внесём любые изменения в контент сайта. Например, заменим текст или
+                картинку на странице, обновим товары. Количество
+                правок не ограничено</p>
+            </div>
+            <div class="developing__item">
+              <div class="developing__item-num">3/4</div>
+
+              <h3 class="developing__item-title">Защищаем сайт от вирусов, сохраняем резервные копии</h3>
+              <p class="developing__item-text">Ежедневно запускаем полную проверку на вирусы и делаем резервное
+                копирование, чтобы вернуть прежнее состояние сайта,
+                если что-то пойдёт не так</p>
+            </div>
+            <div class="developing__item">
+              <div class="developing__item-num">4/4</div>
+
+              <h3 class="developing__item-title">Устраняем технические неполадки</h3>
+              <p class="developing__item-text">Если что-то сломается — исправим в течение суток или быстрее. Кстати, 99%
+                задач по поддержке сайта выполняем день в день</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- text lop -->
+    <div class="text-lop">
+
+      <div class="marquee">
+        <ul class="marquee__list">
+          <li><span class="marquee__text">PR-продвижение ➞ smm ➞ маркетинг ➞ Быстрая загрузка ➞
+              интернет-реклама ➞ продуктовые задачи ➞ Многоязычность ➞
+              Безопасность ➞ Кроссбраузерность ➞</span></li>
+          <li><span class="marquee__text">Адаптивность ➞ Индивидуальный дизайн ➞ Автоматизация ➞ Быстрая загрузка ➞
+              Конверсии ➞ Персонализация ➞ Многоязычность ➞
+              Безопасность ➞ Кроссбраузерность ➞</span></li>
+          <li><span class="marquee__text">Адаптивность ➞ Индивидуальный дизайн ➞ Автоматизация ➞ Быстрая загрузка ➞
+              Конверсии ➞ Персонализация ➞ Многоязычность ➞
+              Безопасность ➞ Кроссбраузерность </span></li>
+          <li><span class="marquee__text">PR-продвижение ➞ smm ➞ маркетинг ➞ Быстрая загрузка ➞
+              интернет-реклама ➞ продуктовые задачи ➞ Многоязычность ➞
+              Безопасность ➞ Кроссбраузерность ➞</span></li>
+
+        </ul>
+        <ul aria-hidden="true">
+          <li>
+            <span class="marquee__text">Get in touch</span>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+    <!-- gallery -->
+    <div class="gallery">
+      <div class="container">
+        <h2 class="gallery-title">МЫ - это</h2>
+        <div class="gallery-wrap">
+          <div class="item item-1"></div>
+          <div class="item item-2"></div>
+          <div class="item item-3"></div>
+          <div class="item item-4"></div>
+          <div class="item item-5"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="container">
+        <div class="faq-section">
+          <h2 class="faq-title">Часто задаваемые вопросы</h2>
+
+          <div class="faq-item" data-id="q1">
+            <div class="faq-question">What is your return policy?</div>
+            <div class="faq-answer">We offer a 30-day return window with full refund, no questions asked.</div>
+          </div>
+
+          <div class="faq-item" data-id="q2">
+            <div class="faq-question">How long does shipping take?</div>
+            <div class="faq-answer">Standard shipping takes 5–7 business days. Express options are available.</div>
+          </div>
+
+          <div class="faq-item" data-id="q3">
+            <div class="faq-question">Do you ship internationally?</div>
+            <div class="faq-answer">Yes, we ship worldwide! Rates and times vary by region.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
 
   </main>
+  <!--footer  -->
   <footer id="footer">
     <div class="container">
       <div class="footer-grid">
@@ -206,21 +483,17 @@
           <p>Мы работаем с каждым клиентом индивидуально, чтобы разработать решение, которое соответствует вашим
             потребностям и
             ожиданиям. Ваше удовлетворение – наш приоритет!</p>
-          <p>Ваш успех – наша цель. Мы используем современные технологии и креативные решения, чтобы создать сайт,
+          <!-- <p>Ваш успех – наша цель. Мы используем современные технологии и креативные решения, чтобы создать сайт,
             который будет не
             только красивым, но и эффективным. Мы всегда готовы ответить на ваши вопросы и предложить наилучшие решения
             для вашего
-            бизнеса.</p>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="LinkedIn"><img src="images/icons/telegram.svg" alt=""> </a>
-            <a href="#" class="social-link" aria-label="YouTube"> <img src="images/icons/Whatsapp.svg" alt=""></a>
-            <a href="#" class="social-link" aria-label="Twitter"> <img src="images/icons/tel.svg" alt=""></a>
-          </div>
+            бизнеса.</p> -->
+
         </div>
 
         <!-- Colonne 2 - Liens rapides -->
         <div class="footer-column">
-          <h3>Navigation</h3>
+          <h3>Навигация</h3>
           <ul class="footer-links">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Nos services</a></li>
@@ -244,12 +517,12 @@
           </ul> -->
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac8b86268f401a99f4c43def53f25ec7b93fda5048afcab6682a5a26e45c00652&amp;source=constructor"
-            width="320" height="406" frameborder="0"></iframe>
+            width="320" height="206" frameborder="0"></iframe>
         </div>
 
         <!-- Colonne 4 - Contact -->
         <div class="footer-column">
-          <h3>Contact</h3>
+          <h3>Контакты</h3>
 
           <div class="contact-info">
             <div class="contact-item">
@@ -270,22 +543,28 @@
             </div>
           </div>
 
-          <div class="newsletter">
+          <!-- <div class="newsletter">
             <p>Abonnez-vous à notre newsletter :</p>
             <form class="newsletter-form">
               <input type="email" class="newsletter-input" placeholder="Votre email" aria-label="Votre adresse email"
                 required>
               <button type="submit" class="newsletter-btn">S'abonner</button>
             </form>
-          </div>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="LinkedIn"><img src="images/icons/telegram.svg" alt=""> </a>
+              <a href="#" class="social-link" aria-label="YouTube"> <img src="images/icons/Whatsapp.svg" alt=""></a>
+              <a href="#" class="social-link" aria-label="Twitter"> <img src="images/icons/tel.svg" alt=""></a>
+            </div>
+          </div> -->
         </div>
       </div>
 
       <div class="copyright">
         <p>&copy;
           Harmonie. Tous droits réservés. | <a href="#">Mentions
-            légales</a> | <a href="#">Politique des cookies</a>
+            légales</a> | <a href="#">Politique des cookies 🔒</a>
         </p>
+
       </div>
     </div>
   </footer>

@@ -1,0 +1,40 @@
+.marquee {
+  overflow: hidden;
+  user-select: none;
+  display: flex;
+  gap: 20px;
+  transform: rotate(-4deg);
+
+}
+
+.text-lop {
+  margin-bottom: 80px;
+}
+
+.marquee__list {
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  animation: marquee 128s linear infinite;
+  text-transform: uppercase;
+}
+
+.marquee__text {
+  background: var(--secondary);
+  background: linear-gradient(90deg, var(--actn-color), var(--secondary));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 400;
+  font-size: 6ch;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
