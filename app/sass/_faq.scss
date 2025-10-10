@@ -42,4 +42,14 @@
   margin-top: 10px;
   // color: #444;
   font-size: 16px;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 0;
+  opacity: 0;
+}
+
+.faq-answer.open {
+  display: block;
+  max-height: 500px;
+  opacity: 1;
 }

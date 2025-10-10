@@ -51,24 +51,28 @@ $(function () {
       $item.find(".faq-answer").slideDown();
     }
 
-    $(".faq-question").on("click", function () {
+    $(".faq-question").on("click", function (e) {
+      // Предотвращаем прокрутку страницы при клике на FAQ на мобильных устройствах
+      e.preventDefault();
+
       const $item = $(this).closest(".faq-item");
+      const $answer = $item.find(".faq-answer");
 
       // Collapse all others
-      $(".faq-item").not($item).removeClass("active").find(".faq-answer").slideUp();
+      $(".faq-item").not($item).removeClass("active").find(".faq-answer").removeClass("open");
 
       // Toggle this one
       $item.toggleClass("active");
-      $item.find(".faq-answer").slideToggle();
+
+      if ($item.hasClass("active")) {
+        $answer.addClass("open");
+      } else {
+        $answer.removeClass("open");
+      }
 
       // Save to localStorage if open
       if ($item.hasClass("active")) {
         localStorage.setItem("openFaqId", $item.data("id"));
-
-        // Scroll smoothly to opened FAQ
-        $('html, body').animate({
-          scrollTop: $item.offset().top - 20
-        }, 500);
       } else {
         localStorage.removeItem("openFaqId");
       }
