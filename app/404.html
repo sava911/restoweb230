@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>RestoWeb</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="logo">
+          <img src="images/logo.png" alt="Логотип">
+          <span>Resto<i>Web</i>Site</span>
+        </div>
+
+
+
+        <button class="burger-menu" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="header__nav">
+          <nav>
+            <ul class="menu">
+              <li><a href="/portfolio" class="">Портфолио</a></li>
+              <li><a href="/blog" class="">Блог</a></li>
+              <li><a href="/services" class="">Услуги</a></li>
+              <li><a href="/comanda" class="">Команда</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__nav-icons">
+            <a href="#"><img src="images/icons/Whatsapp.svg" alt="WhatsApp"></a>
+            <a href="#"><img src="images/icons/telegram.svg" alt="Telegram"></a>
+            <a href="#"><img class="header__icons-tel" src="images/icons/tel.svg" alt="tel"></a>
+          </div>
+          <a class="header__nav-tel" href="tel:+79968552494">+7 996-855-24-94</a>
+          <!-- Loader 5: Rotating lines -->
+          <svg class="header__nav-svg" version="1.1" id="L2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+            xml:space="preserve">
+            <circle fill="none" stroke="#FFD700" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="48" />
+            <line fill="none" stroke-linecap="round" stroke="#00f5d4" stroke-width="4" stroke-miterlimit="10" x1="50"
+              y1="50" x2="85" y2="50.5">
+              <animateTransform attributeName="transform" dur="2s" type="rotate" from="0 50 50" to="360 50 50"
+                repeatCount="indefinite" />
+            </line>
+            <line fill="none" stroke-linecap="round" stroke="#00f5d4" stroke-width="4" stroke-miterlimit="10" x1="50"
+              y1="50" x2="49.5" y2="74">
+              <animateTransform attributeName="transform" dur="15s" type="rotate" from="0 50 50" to="360 50 50"
+                repeatCount="indefinite" />
+            </line>
+          </svg>
+        </div>
+
+        <button type="button" class="blue_btn btn popup" data-popup-id="examplePopup">
+          <span class="blue_btn__title ">Заказать сайт</span>
+          <!---->
+        </button>
+        <div class="header__social">
+          <div class="header__icons">
+            <a href="#"><img src="images/icons/Whatsapp.svg" alt="WhatsApp"></a>
+            <a href="#"><img src="images/icons/telegram.svg" alt="Telegram"></a>
+            <a href="#"><img class="header__icons-tel" src="images/icons/tel.svg" alt="tel"></a>
+          </div>
+        </div>
+        <a class="header__tel" href="tel:+79968552494">+7 996-855-24-94</a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Append Popups Here -->
+  <div class="site-popups"></div>
+
+  <!-- Hidden Popup Template (Can be cloned or reused) -->
+  <div id="examplePopup" class="popup-modal" style="display: none;">
+    <div class="popup-overlay">
+      <div class="popup-box">
+        <button class="close-popup">&times;</button>
+        <h2 class="popup-title">Создадим партнерство?</h2>
+        <form action="">
+          <div>
+            <label class="popup-modal__leb" for="fullName">Ваше Имя</label>
+            <input class="popup-modal__input" type="text" id="fullName" name="fullName" placeholder="Джонни Депп"
+              required>
+            <label class="popup-modal__leb" for="phone">Номер телефона</label>
+            <input class="popup-modal__input" type="tel" id="phone" name="phone" placeholder="+7 (996) 855-2494"
+              required>
+          </div>
+          <label class="popup-modal__leb" for="textarea">Дополнительный текст</label>
+          <textarea class="popup-modal__area" name="textarea" id="textarea"></textarea>
+
+          <label>
+            <input class="popup-modal__chek" type="radio" name="faux_checkbox" value="0" checked>
+            <span>Я даю согласие на обработку моих персональных данных в соответствии с политикой
+              конфиденциальности</span>
+          </label>
+
+          <button type="submit" class="popup-modal__btn btn">Отправить</button>
+          <p class="privacy-note">🔒 Ваша информация в безопасности и никогда не будет передана третьим лицам.
+            <a href="#">политики конфиденциальности</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+    <div class="container">
+      <div id='oopss'>
+        <div id='error-text'>
+          <img src="https://cdn.rawgit.com/ahmedhosna95/upload/1731955f/sad404.svg" alt="404">
+          <span>404 PAGE</span>
+          <p class="p-a">
+            . The page you were looking for could not be found</p>
+          <p class="p-b">
+            ... Back to previous page
+          </p>
+          <a href='index.html' class="back">... Back to previous page</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Colonne 1 - À propos -->
+        <div class="footer-column">
+          <h3 class="logo">
+
+            <span>Resto<i>Web</i>Site</span>
+
+          </h3>
+          <p>Мы понимаем, как важно для вашего бизнеса создать сайт, который будет отражать уникальность вашего
+            заведения и
+            привлекать новых клиентов.</p>
+          <p>Мы работаем с каждым клиентом индивидуально, чтобы разработать решение, которое соответствует вашим
+            потребностям и
+            ожиданиям. Ваше удовлетворение – наш приоритет!</p>
+          <!-- <p>Ваш успех – наша цель. Мы используем современные технологии и креативные решения, чтобы создать сайт,
+              который будет не
+              только красивым, но и эффективным. Мы всегда готовы ответить на ваши вопросы и предложить наилучшие решения
+              для вашего
+              бизнеса.</p> -->
+
+        </div>
+
+        <!-- Colonne 2 - Liens rapides -->
+        <div class="footer-column">
+          <h3>Навигация</h3>
+          <ul class="footer-links">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Nos services</a></li>
+            <li><a href="#">Méthodologie</a></li>
+            <li><a href="#">Témoignages</a></li>
+            <li><a href="#">Événements</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 - Support -->
+        <div class="footer-column">
+          <h3>На карте</h3>
+          <!-- <ul class="footer-links">
+              <li><a href="#">Centre d'aide</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contactez-nous</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="#">CGU</a></li>
+              <li><a href="#">Accessibilité</a></li>
+            </ul> -->
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac8b86268f401a99f4c43def53f25ec7b93fda5048afcab6682a5a26e45c00652&amp;source=constructor"
+            width="320" height="206" frameborder="0"></iframe>
+        </div>
+
+        <!-- Colonne 4 - Contact -->
+        <div class="footer-column">
+          <h3>Контакты</h3>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <img src="images/icons/compas.svg" alt="mail">
+
+              <span>123 Rue du Bien-être<br>75000 Paris, France</span>
+            </div>
+
+            <div class="contact-item">
+              <img src="images/icons/phone.svg" alt="mail">
+
+              <span>+7 996 855 24 94<br>Lun-Ven, 9h-18h</span>
+            </div>
+
+            <div class="contact-item">
+              <img src="images/icons/mail.svg" alt="mail">
+              <span>contact@restowebsite.ru<br>support@restowebsite.ru</span>
+            </div>
+          </div>
+
+          <!-- <div class="newsletter">
+              <p>Abonnez-vous à notre newsletter :</p>
+              <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Votre email" aria-label="Votre adresse email"
+                  required>
+                <button type="submit" class="newsletter-btn">S'abonner</button>
+              </form>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn"><img src="images/icons/telegram.svg" alt=""> </a>
+                <a href="#" class="social-link" aria-label="YouTube"> <img src="images/icons/Whatsapp.svg" alt=""></a>
+                <a href="#" class="social-link" aria-label="Twitter"> <img src="images/icons/tel.svg" alt=""></a>
+              </div>
+            </div> -->
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy;
+          Harmonie. Tous droits réservés. | <a href="#">Mentions
+            légales</a> | <a href="#">Politique des cookies 🔒</a>
+        </p>
+
+      </div>
+    </div>
+  </footer>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
